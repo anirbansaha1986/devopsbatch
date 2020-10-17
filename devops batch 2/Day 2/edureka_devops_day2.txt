@@ -1,0 +1,77 @@
+1) Requirement Gathering
+- Use Cases/Scenarios
+- New Features
+- Assessment of existing resources
+- Bug Fixes
+
+-- Plan for Development
+-- Plan for releases
+-- Set right timelines - Estimated timelines
+
+2) Operations TEam
+- Environment Setup - Operations Team
+- Dev Tools and Licenses (Community Edition/Enterprise Edition)
+- Open Source Tools
+- Code Storage?
+- Infrastucture provisioning
+- HW/SW req
+- Dev tools
+- Testing Tools
+
+- Versioning
+- End Goal/Objective
+
+3) Dev Team
+-- Use Case Docs
+-- Module
+-- Web Design
+-- Specfications
+-- DB Design
+
+- Domain / Server Consultants
+- Architecture and Application DEsign
+- Approach and Methdology
+- ...
+
+DevOps Stages
+-------------
+Plan - Trello, Kanban Boards
+Code - Git Hub, SVN
+Build - Ant, Maven
+Test - JUnit, Selenium
+Deploy - Jenkins
+Release - Puppet/Ansible
+Operate - Puppet/Ansible
+Monitoring - Nagios
+
+Document Management Systems
+- Versioning - Major.Minor Version
+
+1) Clone your repository - Remote Repo
+2) Synchronize changes with Remote Repo
+2.1) Fetch - Update Local DB
+2.2) Pull - Update Local DB and get Working copy - CheckOut File
+2.3) Push - Update Remote Repo with latest Local DB
+3) Working Area - Create files 
+4) Staging Area - git add - Enabled for tracking - git status
+
+
+Local Repo/DB - git log
+
+SVN - Centralized REpo
+Git Hub - Distributed REpo
+-- * Free Repo - Download [Open Source Code], Upload restricted 
+-- Enterprise Repo - Organization, Licensed
+Bit Bucket - Impln of Git Hub - Licensed
+
+
+
+
+
+
+
+
+
+
+
+
