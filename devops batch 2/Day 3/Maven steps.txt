@@ -1,0 +1,58 @@
+- Building Console Application
+
+mvn clean
+
+mvn -B archetype:generate -DgroupId=com.edureka.ompapp -DartifactId=ompfirstapp -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
+
+//archetype:generate - Archetype goals - https://maven.apache.org/archetype/maven-archetype-plugin/
+
+- Open pom.xml and update Compiler version  - 1.8, Junit- 4.12
+
+mvn validate 
+
+mvn compile
+
+mvn test
+
+mvn package
+
+cd target
+
+java -cp ompfirstapp-1.0-SNAPSHOT.jar com.edureka.ompapp.App
+
+mvn clean compile test package
+
+
+- Building Web Application
+mvn archetype:generate -DgroupId=com.edureka.ompwebapp -DartifactId=ompwebapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+mvn clean compile test package
+
+
+- Maven and Git integration
+
+mvn archetype:generate -DgroupId=com.edureka.ompwebapp -DartifactId=ompwebapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+cd ompwebapp
+
+git init .
+git remote add origin "https://github.com/oppandeyedureka/ompwebapprepo.git"
+git pull origin master
+
+mvn clean compile test package
+git add *.*
+git commit -am "Maven Web App"
+git push origin master
+
+
+
+
+
+https://www.theserverside.com/video/Step-by-step-Jenkins-Tomcat-deploy-of-a-WAR-file
+
+
+bat 'cp C:/Users/OMPRAKASH PANDEY/.jenkins/workspace/package_1/target/addressbook.war /opt/tomcat/webapps/'
+
+
+
+copy "C:/Users/OMPRAKASH PANDEY/.jenkins/workspace/package_1/target/addressbook.war" /opt/tomcat/webapps/

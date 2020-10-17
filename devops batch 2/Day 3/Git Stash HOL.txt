@@ -1,0 +1,17 @@
+Git stash Commands
+-------------------
+mkdir gitstashhol
+cd gitstashhol
+git init .
+
+echo "Add content to File">File1.html
+git add File1.html
+git status
+
+git stash
+git status
+git stash list
+git stash show
+git stash pop
+git commit -m "Changes committed"
+git stash clear

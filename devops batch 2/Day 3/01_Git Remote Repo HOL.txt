@@ -1,0 +1,8 @@
+Git Remote Repo Commands
+-------------------
+mkdir gitremoterepohol
+cd gitremoterepohol
+git init .
+git remote add origin "https://github.com/oppandeyedureka/devopsrepo.git"
+git pull origin main
+git push origin master

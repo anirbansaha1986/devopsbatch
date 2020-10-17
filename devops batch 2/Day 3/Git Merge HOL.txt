@@ -1,0 +1,20 @@
+Git Merge Commands
+-------------------
+mkdir gitmergehol
+cd gitmergehol
+git init .
+
+touch File1.html
+git add File1.html
+echo "Add content to File">File1.html
+git commit -am "Initial commit"
+
+git checkout -b new_branch
+echo "Modified content to File1">File1.html
+git commit -am "Changes committed on new branch"
+
+git checkout master
+echo "content to append" >> File1.html
+git commit -am"appended content to File1.html"
+
+git merge new_branch

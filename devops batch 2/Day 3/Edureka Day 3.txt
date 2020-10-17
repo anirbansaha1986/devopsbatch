@@ -1,0 +1,16 @@
+Requirement Gathering => Coding [Developers] => Pushed code on Remote REpo [Centralized Flow] => Branches [Remote Repo]
+
+- Running Code / Project
+
+
+-- DevTest env
+
+CI Pipeline / Build Pipeline
+----------------------------
+1) Build Trigger - git push (code added to repo), Time trigger...
+2) Code Compilation - jdk, .Net framework...
+3) Repositories - jar files, nuget packages
+4) Build tool - Packaging of resources - Ant, Maven
+5) Deploying the packaged resource - *.war, *.jar, *.ear, *.dll, *.py...
+6) Testing components
+

@@ -1,0 +1,11 @@
+edit .bashrc
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-i386
+export PATH=$PATH:$JAVA_HOME/bin
+
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+echo 'deb https://pkg.jenkins.io/debian binary/' >> /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install jenkins
+service jenkins start
+systemctl status jenkins 
+cat /var/lib/jenkins/secrets/initialAdminPassword 
