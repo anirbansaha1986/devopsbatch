@@ -1,0 +1,87 @@
+Containerization
+-------------------
+1) Why?
+1.1) - Optimum use of resources - Compute, Storage, Networking
+
+-- Virtualization - Virtual Machines - VMs - Server Consolidation
+--- System Center, VSphere, Virtual Box, HyperV...
+--- HW Virtualization
+
+-- Containerization
+--- Resource distribution in smaller units
+--- Application Virtualization
+
+1.2) OSS - Open Source, Communities, Crowdsourcing
+- Angular 2 to Angular 8
+- Node JS, npm packages
+- Web Pack
+- Other Libraries
+
+-- Containers - OSS combination
+USer Request => LB Service => Container/s
+
+
+1.3) Services - Layered Approach
+- PL => SL => DAL => Data Source/s
+  (4)  (2)    (3)    (DB Cluster)
+- Login, REgistration, Auth - 20%
+- Catalog, Product, Purchase - 80%
+
+App Isolation, Maximize usage of Limited resources
+
+Packaging Strategy - Containerization
+Devlopment Strategy - Microservices
+Instance Creation Time - VM Size (50 GB to 120 GB), Container Size - 5 MB - 5 GB
+
+2) How
+- rKT Container
+- LXC/LXD COntainer
+
+- *Docker Container
+-- Ecosystem for Containers
+--- Container Image Repository
+--- Language for Creating Images
+--- Container Runtime environment
+--- Free or Paid Repositories
+--- Commands for working
+
+Node - System/VM
+
+Application Designer and Developers
+- Rearchitect the Application
+- Microservice Arch where ever applicable 
+- Code changes - .Net Core, Java, Spring Boot
+
+
+Infra and DEv TEam - combined - Infra DEtails + Code mapping [Configuration of Application]
+1) Docker File/s => Docker Image
+2) Yaml File/s => Docker Compose deployment or Kubernetes deployment
+
+Operations and Infra Team
+- Create Container Execution Environment
+-- Docker Runtime
+- Image REpository
+-- Docker Image REpo - Local Server
+- Orchestration env
+-- Kubernetes, Docker Swarm, Mesosphere
+
+sudo apt install docker.io
+
+Docker Desktop for Windows
+- Hyper-V feature has to be enabled
+- Cannot Virtual Box
+- Kubernetes
+- Docker Tools
+
+Docker Images
+- Tagging - Repository - Azure, Local, Docker Hub
+- Image ID - GUID
+
+Free Repositories
+- Any body can do docker pull
+- Cannot to docker push
+
+Paid Repositories/Enterprises
+- docker push and pull has to be authenticated
+
+docker pull - update local image repo by downloading image from docker hub

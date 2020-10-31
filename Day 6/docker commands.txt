@@ -1,0 +1,22 @@
+sudo apt install docker.io
+sudo docker help
+sudo docker images
+sudo docker container
+sudo docker ps
+sudo docker search hello-world
+sudo docker pull hello-world
+sudo docker images
+sudo docker run hello-world
+
+sudo docker run -itd -v "$PWD":/edureka ubuntu /bin/bash
+		Daemon, Volume, Root Folder, image name, command
+
+sudo docker attach 5a38b
+
+sudo docker build -t localserver.co.in/myimage
+sudo docker pull localserver.co.in/image
+
+sudo docker images
+sudo docker ps -a 
+
+container>ls

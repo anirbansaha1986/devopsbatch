@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+this is totally different content
+content to append
+=======
+totally different content to merge later
+>>>>>>> new_branch

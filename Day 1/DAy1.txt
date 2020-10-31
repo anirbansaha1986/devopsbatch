@@ -1,0 +1,20 @@
+Use Case
+----------
+Login Use Case
+Registration
+Catalog
+Category Details
+
+PL <-> SL <-> BLL <-> DAL <-> Data Sources
+
+DevOps Stages
+-------------
+Plan - Kanban Boards
+Code - Git Hub
+Build - Maven
+Test - JUnit, Selenium
+Deploy - Jenkins
+Release - Puppet/Ansible
+Operate - Puppet/Ansible
+Monitoring - Nagios
+

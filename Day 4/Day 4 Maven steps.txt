@@ -1,0 +1,84 @@
+https://www.rosehosting.com/blog/how-to-install-maven-on-ubuntu-16-04/
+
+sudo apt-update
+sudo apt-cache show maven | grep Version
+
+sudo apt-get -y install maven
+
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64" [https://www.poftut.com/how-to-set-java-home-path-in-linux/]
+
+- Building Console Application
+
+mvn clean
+
+mvn -B archetype:generate -DgroupId=com.edureka.ompapp -DartifactId=ompfirstapp -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
+
+//archetype:generate - Archetype goals - https://maven.apache.org/archetype/maven-archetype-plugin/
+
+- Open pom.xml and update Compiler version  - 1.8, Junit- 4.12
+
+mvn validate 
+
+mvn compile
+
+mvn test
+
+mvn package
+
+cd target
+
+java -cp ompfirstapp-1.0-SNAPSHOT.jar com.edureka.ompapp.App
+
+mvn clean compile test package
+
+
+- Building Web Application
+mvn archetype:generate -DgroupId=com.edureka.ompwebapp -DartifactId=ompwebapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+mvn clean compile test package
+
+
+- Maven and Git integration
+
+mvn archetype:generate -DgroupId=com.edureka.ompwebapp -DartifactId=ompwebapp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+cd ompwebapp
+
+git init .
+git remote add origin "https://github.com/oppandeyedureka/ompwebapprepo.git"
+git pull origin master
+
+mvn clean compile test package
+git add *.*
+git commit -am "Maven Web App"
+git push origin master
+
+
+
+
+
+https://www.theserverside.com/video/Step-by-step-Jenkins-Tomcat-deploy-of-a-WAR-file
+
+
+bat 'cp C:/Users/OMPRAKASH PANDEY/.jenkins/workspace/package_1/target/addressbook.war /opt/tomcat/webapps/'
+
+
+
+copy "C:/Users/OMPRAKASH PANDEY/.jenkins/workspace/package_1/target/addressbook.war" /opt/tomcat/webapps/
+
+
+VM Steps for DevOps
+--------------------
+1) Java Installation
+2) Git Installation
+2.1) Local Git Config
+2.2) Remote Git Hub Repo
+
+3) Maven Installation
+4) Maven Web Project and Git Push
+
+
+5) Jenkins Pipeline
+5.1) Git Pull 
+5.2) Maven Build
+5.3) Publish web app/*war Tomcat env.

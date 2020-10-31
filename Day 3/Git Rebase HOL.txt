@@ -1,0 +1,22 @@
+Git rebase Commands
+-------------------
+mkdir gitrebasehol
+cd gitrebasehol
+git init .
+
+echo "Add content to File">File1.html
+git add File1.html
+git commit -am "Initial Commit"
+git log
+git status
+
+git checkout -b feature_branch master
+echo "Updated content to File">>File1.html
+git commit -am "Adds new feature"
+git log
+git status
+
+git checkout master
+git rebase feature_branch
+git log
+git status

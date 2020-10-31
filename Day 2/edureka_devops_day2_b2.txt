@@ -1,0 +1,33 @@
+git config --global user.name ""
+git config --global user.email ""
+git config -l
+
+mkdir gitbasics
+cd gitbasics
+git init 
+touch File1.html
+vi File1.html
+git add File1.html => Working to Staging Env inside local repo, Enable tracking
+git status
+git rm --cached File1.html => Staging Env to Working Dir, Disable tracking
+git status
+git add File1.html
+git status
+git commit "File1.html" -m "File 1 committed" 
+
+touch File1.html
+vi File1.html
+git add File1.html
+git commit "File1.html" -m "File 1 committed" 
+
+git diff
+
+git tag -a "v1.3" 2d8d65 -m "Tag appended"
+
+
+mkdir gitbasics
+cd gitbasics
+git init 
+git remote add origin "https://github.com/oppandeyedureka/devopsbatch.git"
+git pull origin main
+

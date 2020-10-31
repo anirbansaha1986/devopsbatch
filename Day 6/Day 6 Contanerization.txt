@@ -1,0 +1,143 @@
+Selenium IDE - Record and replay actions
+
+Selenium Web Driver - Programmatically
+
+Selenium Grid
+
+Projects
+--------
+- Without Maven
+-- Download Jar file
+-- Add to class path
+
+- With Maven
+-- Maven Dependencies
+
+TEstNG
+- With Maven
+- Without Maven
+https://testng.org/doc/documentation-main.html
+
+Download jar file 
+- https://oss.sonatype.org/content/repositories/snapshots/org/testng/testng/6.9.14-SNAPSHOT/
+
+Download jcommander jar file - 
+http://www.java2s.com/Code/Jar/j/Downloadjcommanderjar.htm
+
+Set the TESTNG_HOME environment variable 
+Set CLASSPATH Variable
+
+java -cp "D:\edureka\javaapps\TestNGProj" org.testng.TestNG testng.xml
+
+Create required classes - POJOs and Business Logic
+
+Create test class and testng.xml
+
+java -cp "D:\edureka\devops batch\testng-6.9.14-20161207.183156-49.jar;D:\edureka\javaapps\TestNGProj\bin" org.testng.TestNG testng.xml
+
+Presentation Tier - Selenium
+BL Tier - Junit and TestNG
+DAL - Junit and TestNG
+
+
+Current Applications
+--------------------
+
+- Open Source Apps
+-- Multiple Technologies/Frameworks
+-- Multiple Languages
+-- Multiple Versions
+-- Compatibility - NodeJs 2.x <---> Angular 3.x <---> React 1.x?
+
+
+- Virtual Machines - HW Virtualization[OS, Runtime, Appln, Data]
+-- Linux VM
+-- Windows VM
+-- Virtualization Techs
+--- HyperV
+--- Virtual Box
+--- System Center
+--- VM Ware
+---  vCloud
+- Exact Environment - VM - Do installation -> VM image
+- Virtual Network
+- VM Size - Too large (50 GB to 1 TB)
+- VM image - Large?
+
+
+Micro Services
+- Independent Services
+- Independent Scalability of Service
+- Service Architecting
+- Infrastructure for Managing Microservices?
+
+Containerization - App Virtualization
+- Manage small independent deployments - Focus is on application
+- Packaged Env for relevant libraries and Application Code
+- Standarized and Customized Container Images
+- Infrastrcture for Microservices
+- Container Networking
+- Container Orchestration
+
+
+Linux Containers - 98%
+Windows Containers - 2% [.Net Core, Windows Server 2016]
+
+Cattles     vs Pets
+Containers     VMs
+
+Optimize usage of resources
+-- Compute
+-- Storage
+-- Networking
+
+Container Impln
+---------------
+LXC
+LXD
+Docker - Mkt and Promotion
+
+Docker Ecosystem
+----------------
+- Docker Images - Ship
+- Docker Images Repository - dockerhub => hub.docker.com
+
+- Docker commands - Build
+- dockerfile - details of the image and application reference 
+
+- Docker runtime - Docker client side [Linux/Windows] - Running
+-- Windows Client 
+--- Docker DEsktop for Windows [>Windows 10, Hyper V]
+---- Linux VM
+- >Windows Server 2016
+
+DockerFile
+-----------
+- Details of OS kernel/Linux Distro Information
+- Environment details- Libraries Information and Details
+- Application Content - COpy and paste content[eg. Copy war file from local dir to Web apps folder inside the container]
+- Other additional commands
+...
+
+docker build - Help to create image
+docker run - Run image locally
+
+//Tagging fot your image
+docker login - Connect to docker hub image repo
+
+docker push
+
+Container Image  => container
+-----------------------------
+Class        ===>  Object
+ISO Image    ===>  Virtual Machine
+
+
+
+
+
+
+
+
+
+

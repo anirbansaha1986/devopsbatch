@@ -1,0 +1,78 @@
+Dockerfile => docker build => docker image => docker run [Container]
+
+FROM - Base OS
+WORKDIR - Virtual Dir/Folder
+VOLUME - Shared Dir
+ENV - Setting Env Variables
+RUN - Execute Commands
+ADD - Copy files from host OS into Container
+EXPOSE - Expose port for accessing
+
+
+Base Image -  Template [Base Class]
+- NGNIX [All other dependencies]
+- Copy files - Application content
+
+apt-get update => Ubuntu 16.0 -> Ubuntu 16.1
+apt-get upgrade => Ubuntu 16.0 -> Ubuntu 18.0
+
+Azure Repos similar to Git Hub
+Azure Container Registry similar to Docker Hub
+
+Linux Container - 95%
+- Linux OS
+- Windows OS
+-- Docker Desktop for Windows
+
+Windows Container - 5%
+- Windows Server 2016 with Containers
+- Windows Server 2019 with Containers
+-- Base Image Windows Nano
+
+#This is First dockerfile 
+FROM ubuntu 
+MAINTAINER omspandey@hotmail.com 
+RUN apt-get update 
+RUN apt-get install nginx -y 
+CMD ["echo","Image created"]
+
+docker build -t imgname:tagname dirofdockerfile
+sudo docker build -t omspandey/ompimage:latest .
+-t - Tag Name - REpository Details [omspandey, localhost:8090/mydocker/omspandey/ompimg:latest, ompacr.acr.io/omspandey/ompimg:latest] - 
+
+
+repository servicename/repositoryname/imagename:version
+
+sudo docker login
+sudo docker push omspandey/ompimage:latest
+sudo docker run –d –p hostport:containerport –-name contname imagename
+sudo docker run –d –p 80:80 –-name omp1 omspandey/ompimage:latest
+
+#This is Second dockerfile 
+FROM ubuntu 
+RUN apt-get update 
+RUN apt-get install apache2 -y 
+RUN apt-get install apache2-utils -y 
+RUN apt-get clean 
+EXPOSE 80 CMD ["apache2ctl", "-D", "FOREGROUND"]
+
+#This is Third dockerfile 
+FROM alpine:3.4
+RUN apk update
+RUN apk add curl
+RUN apk add vim
+RUN apk add git
+
+#This is Fourth dockerfile 
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install -y nginx
+COPY index.html /usr/share/nginx/html/
+ENTRYPOINT ["/usr/sbin/nginx","-g","daemon off;"]
+EXPOSE 80
+
+
+
+ 
+
+

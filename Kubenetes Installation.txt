@@ -1,0 +1,18 @@
+Kubernetes Installation
+-----------------------
+sudo su
+apt get update
+sudo apt-get install openssh-server
+apt-get update 
+apt-get install -y apt-transport-https curl
+//curl -s https://packages.cloud.google.com/apt/doc/aptkey.gpg | apt-key add -
+curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
+sudo mv ./kubectl /usr/local/bin/kubectl
+kubectl version --client
+nano /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+Environment="cgroup-driver=systemd/cgroup-driver=cgroupfs"
+
+https://ubuntu.com/kubernetes/install#single-node
+sudo snap install microk8s --classic
+
+sudo snap install microk8s --classic

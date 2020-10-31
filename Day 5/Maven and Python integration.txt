@@ -1,0 +1,37 @@
+https://mvnrepository.com/open-source/python-integration
+https://www.bswen.com/2018/04/maven-Execute-python-scripts-in-maven-projects.html
+
+Tomcat install on Ubuntu VM
+----------------------------
+sudo apt-get update
+sudo apt-get install default-jdk
+
+//Set Path and Class Path
+
+//Install Git
+
+//Install Maven
+ 
+sudo apt update
+sudo apt install tomcat9 tomcat9-admin
+
+Update Server.xml to change port numbe rif jenkins is running on port 8080
+Update tomcat-users and add roles and user
+
+sudo systemctl enable tomcat9
+
+//Download Jenkins Jar file
+
+https://github.com/amrjeet/DevOpsClassCodes
+
+
+Web Page => Service Layer(RESTful API) => JPA/Hibernate/DAL => DB
+
+
+
+
+
+
+
+
+
